@@ -1,0 +1,11 @@
+#!/usr/bin/env bash
+#Scripts that displays current file
+
+for file in *
+do
+	if [-f "#file" ] && [[ "$file" != .* ]]
+	then
+		filename=$(echo "$file" | cut -d'-' -f2-)
+		echo "$file"
+	fi
+done 
