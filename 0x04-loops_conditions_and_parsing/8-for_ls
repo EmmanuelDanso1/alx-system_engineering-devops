@@ -1,11 +1,7 @@
 #!/usr/bin/env bash
 #Scripts that displays current file
+list=$(ls)
+for i in $list; do
+	echo "$i" | cut -d '-' -f2
+done
 
-for file in *
-do
-	if [-f "#file" ] && [[ "$file" != .* ]]
-	then
-		filename=$(echo "$file" | cut -d'-' -f2-)
-		echo "$file"
-	fi
-done 
