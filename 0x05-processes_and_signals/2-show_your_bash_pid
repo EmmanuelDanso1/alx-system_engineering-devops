@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+#Previous exercise command and displays line containing bash word
+#Allowing you to easily get PID
+
+./1-list_your_processess | grep "bash"
