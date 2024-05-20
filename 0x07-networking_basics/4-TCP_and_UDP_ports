@@ -1,0 +1,18 @@
+#!/usr/bin/env bash
+# Check if ss command is available
+if ! command -v ss &> /dev/null
+then
+    echo "ss command could not be found"
+    exit 1
+fi
+
+# Display listening ports with PID and program name
+ss -ltunp | awk '
+BEGIN {
+    print "Proto Local Address:Port       PID/Program name"
+}
+/^LISTEN/ {
+    print $1, $4, $7
+}'
+
+exit 0
