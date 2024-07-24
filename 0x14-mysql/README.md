@@ -1,1 +1,1 @@
-Mysql REPLICA, backups and storage
+sql replica. storage, backup
