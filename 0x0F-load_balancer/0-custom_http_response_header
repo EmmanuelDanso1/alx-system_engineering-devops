@@ -1,8 +1,8 @@
 #!/usr/bin/env bash
 # Configure a new unbuntu server with NGINX installed
 
-apt-get -y update
-apt-get -y install nginx
+sudo apt-get -y update
+sudo apt-get -y install nginx
 echo "Hello World!" > /var/www/html/index.html
 cm="rewrite ^/redirect_me https://www.linkedin.com/in/emmanuel-danso-862566249/ permanent;"
 sed -i "66i $cm" /etc/nginx/sites-available/default
