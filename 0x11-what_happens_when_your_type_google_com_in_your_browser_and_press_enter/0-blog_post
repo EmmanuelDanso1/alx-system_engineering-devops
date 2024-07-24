@@ -1,0 +1,17 @@
+Browser requests a url link that is www.google.com
+
+DNS translate the human-readable domain name www.google.com into an IP address that the computer understands. 
+
+The browser now establishes a connection to the web server using the TCP/IP. The browser sends a synchronize packet to the web server, the web server responds with a synchronize-acknowledgement packet. The browser sends an acknowledge packet back to the server. Data is now established between the server and browser.
+
+Firewall ensures the security and control of incoming and outgoing networks against malicious attack and also protects the server from malicious traffic and enables computer communicates with trusted sources.
+
+HTTPS/SSL secures the or encrypt the data transfer between the browser and the server.
+
+Load balancer distribute incoming traffic across multiple server to ensure that the server is not overloading as a lot of users tries to access it.
+
+Web server is responsible for handling the https requests from the server.
+
+Application server receives the requests from web server
+
+For databases, if the application involves data storage and data retrieval, its stores and retrieve from a database
