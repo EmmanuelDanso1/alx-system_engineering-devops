@@ -1,1 +1,1 @@
-ssl certification
+mysql and replica of msql
